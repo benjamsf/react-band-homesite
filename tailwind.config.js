@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-import module from "module";
-
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -75,6 +73,5 @@ module.exports = {
       }),
     },
   },
-  // eslint-disable-next-line no-undef
   plugins: [require("@tailwindcss/typography")],
 };

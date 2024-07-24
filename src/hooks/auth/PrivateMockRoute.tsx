@@ -1,5 +1,5 @@
-import { Navigate } from "react-router-dom";
+import { ReactNode } from "react";
 
-export const PrivateRoute = ({ children }) => {
+export const PrivateRoute = ({ children }: { children: ReactNode }) => {
   return children;
 };

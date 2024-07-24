@@ -24,7 +24,7 @@ export function Footer() {
           onSelect={(value) => changeLanguage(value)}
         />
       </div>
-      
+
       <hr className="mx-auto w-56" />
 
       <div className="py-5 text-xs">
@@ -35,7 +35,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-        &copy;  Benjam Bröijer, 2024
+          &copy; Benjam Bröijer, 2024
         </a>
       </div>
 

@@ -1,23 +1,18 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import HomeView from "./views/HomeView";
 /* Mock here */ /*
-import { PrivateRoute } from "./PrivateMockRoute"; 
+import { PrivateRoute } from "./PrivateMockRoute";
 */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { PrivateRoute } from "./hooks/auth/PrivateRoute"; 
+import { PrivateRoute } from "./hooks/auth/PrivateRoute";
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomeView />,
+  },
+]);
 
-    {
-      path: "/error",
-      element: <ErrorView />,
-    },
-    {
-      path: "*",
-      element: <NotFoundView />,
-    },
-  ]);
-
-  export default function Router() {
-    return <RouterProvider router={router} />;
-  }
-  
+export default function Router() {
+  return <RouterProvider router={router} />;
+}

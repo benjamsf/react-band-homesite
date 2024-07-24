@@ -1,7 +1,6 @@
 {
-    "COMMON-VERBS": "COMMON-VERBS",
+  "COMMON-VERBS": "COMMON-VERBS",
 
-    "FOOTERS": "FOOTERS",
-    "footer.madeBy": "Made by:"
-
+  "FOOTERS": "FOOTERS",
+  "footer.madeBy": "Made by:"
 }
