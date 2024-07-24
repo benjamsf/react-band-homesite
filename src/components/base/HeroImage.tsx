@@ -15,11 +15,11 @@ export function HeroImage({ imageUrl, title, subtitle }: HeroImageProps) {
       }}
     >
       <div
-        className="absolute left-0 bottom-0 p-4 text-white"
-        style={{ left: "15%" }}
+        className="absolute left-0 bottom-0 pb-4 text-white"
+        style={{ left: "7%" }}
       >
-        <h1 className="text-xl font-bold">{title}</h1>
-        <p className="text-md">{subtitle}</p>
+        <h1 className="text-xl text-black font-bold">{title}</h1>
+        <p className="text-md text-black">{subtitle}</p>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 export function Navbar() {
   return (
-    <nav className="sticky top-0 bg-gray-800 text-white py-2">
-      <div className="container mx-auto px-4">
-        <ul className="flex space-x-4">
+    <nav className="sticky top-0 bg-gray-800 text-white py-2 h-10">
+      <div className="relative" style={{ paddingLeft: "7%", width: "100%" }}>
+        <ul className="flex space-x-8">
           <li>
             <a href="#" className="hover:underline">
               Home
