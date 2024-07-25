@@ -1,13 +1,15 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 
 interface CardsContainerProps {
   children: ReactNode;
 }
 
 export function CardsContainer({ children }: CardsContainerProps) {
-  return (
-    <div className="flex flex-col items-center justify-center mx-2 h-[calc(100vh - 4rem)] md:px-[20%] lg:px-[32%]">
-      {children}
-    </div>
-  );
+  const childrenCount = React.Children.count(children);
+  const containerClass =
+    childrenCount > 1
+      ? "mx-2 p-2 h-[calc(100vh - 4rem)] flex flex-col flex-col gap-3 md:gap-4 lg:grid lg:grid-cols-2 lg:gap-4 xl:grid-cols-3 xl:gap-6"
+      : "mx-2 p-2 h-[calc(100vh - 4rem)] flex flex-col items-center justify-center";
+
+  return <div className={containerClass}>{children}</div>;
 }

@@ -14,6 +14,8 @@ export function HeroImage({ imageUrl, title, subtitle }: HeroImageProps) {
         minHeight: "100px",
       }}
     >
+      <div className="absolute inset-0 bg-white bg-opacity-50"></div>
+
       <div
         className="absolute left-0 bottom-0 pb-4 text-white"
         style={{ left: "7%" }}

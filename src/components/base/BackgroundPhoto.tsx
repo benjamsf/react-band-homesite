@@ -5,10 +5,12 @@ interface BackgroundPhotoProps {
 function BackgroundPhoto({ imageUrl }: BackgroundPhotoProps) {
   return (
     <div
-      className="absolute inset-0 bg-cover bg-center -z-10"
+      className="absolute top-0 left-0 w-full"
       style={{
         backgroundImage: `url(${imageUrl})`,
-        height: "calc(100vh - 4rem)",
+        height: '85vh', // 85% of the viewport height
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     />
   );

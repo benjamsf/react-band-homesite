@@ -13,11 +13,13 @@ export function Footer() {
   }));
 
   return (
-    <div className="font-heading text-uppercase text-center text-sm text-gray-500 pt-5 mt-10 mx-auto max-w-screen-xl">
-      <hr className="mx-auto" />
+    <div className="w-full bg-gray-800 z-50 overflow-hidden text-white font-heading text-uppercase text-center text-sm pt-5 mt-10 mx-auto">
+      <hr className="mx-auto w-11/12" />
 
       <div className="pt-4 py-3">
         Version 0.0.0
+        <br />
+        <br />
         <DropdownMenu
           triggerLabel="Language"
           items={languageItems}
